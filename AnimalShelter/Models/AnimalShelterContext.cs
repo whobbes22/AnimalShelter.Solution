@@ -4,8 +4,8 @@ namespace AnimalShelter.Models
 {
   public class AnimalShelterContext : DbContext
   {
-    public DbSet<Item> Items { get; set; }
+    public DbSet<Animal> Animals { get; set; } // need to change item later
 
-    public AnimalShleterContext(DbContextOptions options) : base(options) { }
+    public AnimalShelterContext(DbContextOptions options) : base(options) { }
   }
 }
